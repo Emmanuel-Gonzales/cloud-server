@@ -9,7 +9,7 @@ app.get('/', (req, res, next) => {
 });
 
 app.get('/hello', (req, res, next) => {
-  let name = req.query.name
+  let name = req.query.name;
   res.status(200).send(`Hello ${name}`);
 });
 
